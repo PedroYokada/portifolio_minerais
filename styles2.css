@@ -1,0 +1,78 @@
+body {
+  background-color: #26a3a3;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  border-style: double;
+  background-color: rgb(142, 30, 246);
+  color: #ffffff;
+}
+
+.cabecalho h1 {
+  border: 1px solid #d7d7d7;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 3rem;
+}
+
+.tituloprincipal {
+  color: #ffffff;
+  text-align: center;
+}
+
+.div1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.divtexto {
+  text-align: justify;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+}
+
+.carrosel {
+  box-shadow: 2px 2px 4px border black;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  border-radius: 2%;
+}
+
+.container-carrosel {
+  display: flex;
+  transition: transform 1.5s ease-in;
+  transform: translateX(0);
+}
+
+.container-carrosel img {
+  object-fit: cover;
+  height: 650px;
+  width: 800px;
+  border-radius: 2%;
+}
+
+
+.rodape {
+  margin-top: 5%;
+  border-style: double;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.8rem;
+  background-color: rgb(142, 30, 246);
+  color: #ffffff;
+}
