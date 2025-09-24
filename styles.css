@@ -1,5 +1,5 @@
 body {
-  background-color: #26a3a3;
+  background-color: #9966cc;
   min-height: 100vh;
 }
 
@@ -9,7 +9,7 @@ body {
 
 .cabecalho {
   border-style: double;
-  background-color: rgb(142, 30, 246);
+  background-color: #1e90ff;
   color: #ffffff;
 }
 
