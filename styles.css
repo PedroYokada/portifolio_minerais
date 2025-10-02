@@ -11,7 +11,6 @@ body {
 .cabecalho {
   border-style: double;
   background-color: #1e90ff;
-
 }
 
 .cabecalho h1 {
@@ -42,7 +41,7 @@ body {
 .divtexto {
   text-align: justify;
   font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #ffffff;
 }
 
@@ -67,7 +66,6 @@ body {
   border-radius: 2%;
 }
 
-
 .rodape {
   margin-top: 5%;
   border-style: double;
@@ -77,7 +75,6 @@ body {
   background-color: rgb(142, 30, 246);
   color: #ffffff;
 }
-
 
 .div2 img {
   width: 100px;
@@ -91,7 +88,14 @@ body {
 }
 
 .div2 table {
-  width: auto;  
+  width: auto;
   max-width: auto;
   margin: 0 auto;
+  background-color: #dacccc;
+  text-align: center;
+  color: #af11af;
+}
+
+p {
+  text-align: justify;
 }
