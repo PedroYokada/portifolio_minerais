@@ -1,6 +1,7 @@
 body {
   background-color: #9966cc;
   min-height: 100vh;
+  color: #ffffff;
 }
 
 * {
@@ -10,7 +11,7 @@ body {
 .cabecalho {
   border-style: double;
   background-color: #1e90ff;
-  color: #ffffff;
+
 }
 
 .cabecalho h1 {
@@ -75,4 +76,22 @@ body {
   font-size: 0.8rem;
   background-color: rgb(142, 30, 246);
   color: #ffffff;
+}
+
+
+.div2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.div2 {
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.div2 table {
+  width: auto;  
+  max-width: auto;
+  margin: 0 auto;
 }
