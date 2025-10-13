@@ -1,78 +1,34 @@
 body {
-  background-color: #26a3a3;
+  background-color: #9966cc;
   min-height: 100vh;
+  color: #ffffff;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.cabecalho {
-  border-style: double;
-  background-color: rgb(142, 30, 246);
-  color: #ffffff;
-}
-
-.cabecalho h1 {
-  border: 1px solid #d7d7d7;
-  padding: 10px;
-  margin: 0px;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  font-size: 3rem;
-}
-
-.tituloprincipal {
-  color: #ffffff;
-  text-align: center;
-}
-
 .div1 {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Exo 2", sans-serif;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
 }
-
-.divtexto {
-  text-align: justify;
-  font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: #ffffff;
-}
-
 .carrosel {
-  box-shadow: 2px 2px 4px border black;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  height: 500px;
-  width: 500px;
-  border-radius: 2%;
-}
-
-.container-carrosel {
-  display: flex;
-  transition: transform 1.5s ease-in;
-  transform: translateX(0);
+  height: 550px;
+  width: 600px;
+  border-radius: 12px;
 }
 
 .container-carrosel img {
   object-fit: cover;
-  height: 650px;
-  width: 800px;
-  border-radius: 2%;
+  height: 550px;
+  width: 600px;
 }
 
-
-.rodape {
-  margin-top: 5%;
-  border-style: double;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  font-size: 0.8rem;
-  background-color: rgb(142, 30, 246);
-  color: #ffffff;
+.container-carrosel {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
 }

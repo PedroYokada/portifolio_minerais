@@ -9,12 +9,12 @@ body {
 }
 
 .cabecalho {
-  border-style: double;
+  border-style: none;
   background-color: #1e90ff;
+  border-radius: 12px;
 }
 
 .cabecalho h1 {
-  border: 1px solid #d7d7d7;
   padding: 10px;
   margin: 0px;
   text-align: center;
@@ -68,12 +68,15 @@ body {
 
 .rodape {
   margin-top: 5%;
-  border-style: double;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
   text-align: center;
   font-family: "Exo 2", sans-serif;
-  font-size: 0.8rem;
-  background-color: rgb(142, 30, 246);
+  font-size: 0.9rem;
+  background-color: #1e90ff;
   color: #ffffff;
+  padding: 1%;
 }
 
 .div2 img {
@@ -94,6 +97,8 @@ body {
   background-color: #dacccc;
   text-align: center;
   color: #af11af;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
 }
 
 p {
