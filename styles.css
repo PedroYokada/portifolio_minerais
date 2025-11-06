@@ -27,6 +27,12 @@ body {
   text-align: center;
 }
 
+.divinicial {
+  background-color: #1e6fc0;
+  font-size: 20px;
+  border-radius: 2%;
+}
+
 .div1 {
   text-align: center;
   font-size: 2rem;
@@ -48,9 +54,9 @@ body {
 .carrosel {
   box-shadow: 2px 2px 4px border black;
   overflow: hidden;
-  height: 650px;
-  width: 800px;
   border-radius: 2%;
+  height: auto; /* ou auto */
+  margin: 0 auto; /* centraliza */
 }
 
 .container-carrosel {
@@ -103,4 +109,9 @@ body {
 
 p {
   text-align: justify;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 30px;
 }
