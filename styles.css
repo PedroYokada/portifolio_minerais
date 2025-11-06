@@ -55,8 +55,9 @@ body {
   box-shadow: 2px 2px 4px border black;
   overflow: hidden;
   border-radius: 2%;
-  height: auto; /* ou auto */
-  margin: 0 auto; /* centraliza */
+  height: auto;
+  margin: 0 auto;
+  margin: 10px;
 }
 
 .container-carrosel {
@@ -106,6 +107,26 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
 }
+
+.div3 {
+  background-color: #1e6fc0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+  color: #ffffff;
+  margin-top: 5%;
+}
+
+.div3 img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
 
 p {
   text-align: justify;
