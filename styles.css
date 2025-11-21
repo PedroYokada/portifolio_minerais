@@ -1,138 +1,77 @@
 body {
   background-color: #9966cc;
-  min-height: 100vh;
-  color: #ffffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .cabecalho {
-  border-style: none;
   background-color: #1e90ff;
-  border-radius: 12px;
-}
-
-.cabecalho h1 {
-  padding: 10px;
-  margin: 0px;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  font-size: 3rem;
-}
-
-.tituloprincipal {
-  color: #ffffff;
-  text-align: center;
-}
-
-.divinicial {
-  background-color: #1e6fc0;
-  font-size: 20px;
-  border-radius: 2%;
-}
-
-.div1 {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Exo 2", sans-serif;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.divtexto {
-  text-align: justify;
-  font-size: 2rem;
-  font-family: "Times New Roman", Times, serif;
-  color: #ffffff;
-}
-
-.carrosel {
-  box-shadow: 2px 2px 4px border black;
-  overflow: hidden;
-  border-radius: 2%;
-  height: auto;
-  margin: 0 auto;
-  margin: 10px;
-}
-
-.container-carrosel {
-  display: flex;
-  transition: transform 1.5s ease-in;
-  transform: translateX(0);
-}
-
-.container-carrosel img {
-  object-fit: cover;
-  height: 650px;
-  width: 800px;
-  border-radius: 2%;
-}
-
-.rodape {
-  margin-top: 5%;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  font-size: 0.9rem;
-  background-color: #1e90ff;
-  color: #ffffff;
-  padding: 1%;
-}
-
-.div2 img {
-  width: 100px;
-  height: 100px;
-}
-
-.div2 {
-  align-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.div2 table {
-  width: auto;
-  max-width: auto;
-  margin: 0 auto;
-  background-color: #dacccc;
-  text-align: center;
-  color: #af11af;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-}
-
-.div3 {
-  background-color: #1e6fc0;
-  border-radius: 12px;
   padding: 20px;
   text-align: center;
-  font-size: 2rem;
-  font-family: "Exo 2", sans-serif;
-  color: #ffffff;
-  margin-top: 5%;
 }
 
-.div3 img {
-  width: 100%;
+.cabecalho a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.divinicial,
+.div3 {
+  background-color: #1e6fc0;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.carrosel {
+  width: 90%;
   max-width: 900px;
-  height: auto;
   border-radius: 12px;
-  margin-top: 20px;
+  overflow: hidden;
+}
+
+.carrosel img {
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 
-p {
-  text-align: justify;
-  font-size: 20px;
+.texto {
+  color: white;
+  text-align: center;
+  max-width: 900px;
 }
 
-h3 {
-  font-size: 30px;
+
+@media (min-width: 900px) {
+
+  .divinicial,
+  .div3 {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .carrosel {
+    width: 70%;
+  }
+}
+
+
+.rodape {
+  background-color: #1e90ff;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
 }
