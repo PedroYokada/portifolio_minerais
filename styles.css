@@ -42,7 +42,7 @@ h6 {
 .cabecalho nav {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .cabecalho a {
@@ -52,7 +52,7 @@ h6 {
 }
 
 .cabecalho a:hover {
-  color: #9966cc;
+  color: #66ccff;
 }
 
 .divinicial,
