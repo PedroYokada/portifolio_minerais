@@ -33,6 +33,16 @@ h6 {
   background-color: #1e90ff;
   padding: 20px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cabecalho nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
 }
 
 .cabecalho a {
