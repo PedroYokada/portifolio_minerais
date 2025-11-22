@@ -14,21 +14,26 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   <title>Portifólio - Geologia</title>
 </head>
 
 <body>
+
+
   <header class="cabecalho">
     <h1>Portifólio - Geologia</h1>
+
+    <a href="#intro">INTRODUÇÃO</a>
+    <a href="#conveccao">CONVECÇÃO DO MAGMA</a>
+    <a href="#mohs">ESCALA DE MOHS</a>
     <a href="./sobremim/index2.html">SOBRE MIM</a>
   </header>
 
-  <h1 class="tituloprincipal"></h1>
 
 
-  <div class="divinicial">
+  <div id="intro" class="divinicial">
 
     <h2>Portifólio geológico</h2>
     <p>
@@ -67,51 +72,71 @@
     </div>
 
     <div class="texto">
-
-
       <h3>O que é um mineral?</h3>
-
       <p>
         Mineral é um sólido cristalino e inorgânico com composição química definida e propriedades físicas específicas.
-        (WICANDER, R.; MONROE, J.S.; PETERS, E.K. - Fundamentos de Geologia, 2009).
       </p>
 
       <h3>Escala de Mohs</h3>
-
       <p>
-        A Escala de Mohs mede a dureza de um mineral — sua capacidade de riscar outro. Não deve ser confundida com
-        tenacidade, que é a resistência de um mineral à quebra.
+        A Escala de Mohs mede a dureza de um mineral — sua capacidade de riscar outro.
       </p>
     </div>
   </div>
 
 
-  <div class="div3">
+  <div id="conveccao" class="div3">
     <h2>Convecção de Magma</h2>
 
+    <!-- CARROSSEL 2 (Igual ao primeiro) -->
     <div class="carrosel">
-      <img src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg" alt="Convecção de magma" class="d-block w-100" />
+      <div id="carouselExample2" class="carousel slide">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg" class="d-block w-100" alt="Convecção de magma">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./minerais/2.jpg" class="d-block w-100" alt="Imagem 2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/900x300" class="d-block w-100" alt="Imagem 3">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </div>
 
     <div class="texto">
       <p>
         A convecção do magma é um processo fundamental no interior da Terra.
-        O movimento convectivo no manto influencia vulcanismo, formação de rochas e a dinâmica das placas tectônicas.
       </p>
 
       <h3>Importância geológica</h3>
 
       <p>
         Esse processo explica a geração de novas crostas, zonas de subducção e cadeias montanhosas.
-        Também afeta a distribuição de minerais raros na crosta.
       </p>
     </div>
   </div>
 
-  <div class="cards-container">
+
+
+  <div id="mohs" class="cards-container">
 
     <h2>Escala de Mohs</h2>
-
     <div class="card" style="width: 18rem;">
       <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/talco-3-1024x683.jpg" alt="Mineral Talco" />
       <div class="card-body">
@@ -202,10 +227,10 @@
 
   </div>
 
-
   <footer class="rodape">
     <h1>© 2025 - Pedro Yokada - Todos os direitos reservados</h1>
   </footer>
+
 </body>
 
 </html>

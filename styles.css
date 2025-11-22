@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p,
 a,
 button,
@@ -32,8 +36,13 @@ h6 {
 }
 
 .cabecalho a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.cabecalho a:hover {
+  color: #9966cc;
 }
 
 .divinicial,
