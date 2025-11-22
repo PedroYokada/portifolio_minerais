@@ -2,8 +2,28 @@ body {
   background-color: #9966cc;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
+p,
+a,
+button,
+span {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .cabecalho {
   background-color: #1e90ff;
@@ -12,11 +32,9 @@ body {
 }
 
 .cabecalho a {
-  color: white;
   text-decoration: none;
   font-weight: bold;
 }
-
 
 .divinicial,
 .div3 {
@@ -26,13 +44,21 @@ body {
   margin: 40px auto;
   width: 90%;
   max-width: 1200px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
+.divinicial h1,
+.div3 h1 {
+  text-align: center;
+}
+
+
+.div3 p {
+  text-align: justify;
+}
 
 .carrosel {
   width: 90%;
@@ -46,22 +72,18 @@ body {
   border-radius: 12px;
 }
 
-
 .texto {
-  color: white;
   text-align: center;
   max-width: 900px;
 }
 
 .cards-container {
   background-color: #1e6fc0;
-  color: white;
   padding: 30px;
   border-radius: 15px;
   margin: 40px auto;
   max-width: 1200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,13 +98,10 @@ body {
   font-weight: bold;
 }
 
-
-
 @media (min-width: 900px) {
-
   .divinicial,
   .div3 {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
   }
 
@@ -90,7 +109,6 @@ body {
     width: 70%;
   }
 }
-
 
 .rodape {
   background-color: #1e90ff;
