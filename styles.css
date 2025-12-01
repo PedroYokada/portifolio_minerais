@@ -13,9 +13,7 @@ p,
 a,
 button,
 span {
-  font-family: "Literata", serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 h1,
@@ -24,9 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Literata", serif;
   font-weight: 700;
-  font-style: normal;
 }
 
 .cabecalho {
@@ -66,10 +62,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.divinicial h1,
-.div3 h1 {
   text-align: center;
 }
 
@@ -78,20 +70,19 @@ h6 {
 }
 
 .carrosel {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   border-radius: 12px;
   overflow: hidden;
+  transition: width 0.4s ease, margin 0.4s ease;
 }
 
 .carrosel img {
+  width: 100%;
+  height: 35vh;
   object-fit: cover;
   border-radius: 12px;
-}
-
-.texto {
-  text-align: center;
-  max-width: 900px;
+  transition: height 0.4s ease, width 0.4s ease, border-radius 0.3s ease;
 }
 
 .cards-container {
@@ -116,25 +107,74 @@ h6 {
   color: white;
 }
 
-.cards-container .card:hover {
+.card {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  margin: 10px 0;
+  transition: transform 0.3s ease, width 0.4s ease;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card h5 {
+  text-align: center;
+}
+
+.card:hover {
   border-color: #66ccff;
   background-color: #708090;
   transform: scale(1.03);
 }
 
-.cards-container .card:hover p {
+.card:hover p,
+.card:hover h5 {
   color: white;
 }
 
-@media (min-width: 900px) {
-  .divinicial,
-  .div3 {
-    flex-direction: column;
-    text-align: center;
+@media (min-width: 576px) {
+  .carrosel img {
+    height: 45vh;
   }
+  .card {
+    width: calc(50% - 10px);
+  }
+}
 
+@media (min-width: 768px) {
+  .carrosel img {
+    height: 50vh;
+  }
+  .card {
+    width: calc(33.33% - 14px);
+  }
+}
+
+@media (min-width: 992px) {
+  .carrosel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carrosel img {
+    height: 60vh;
+  }
+  .card {
+    width: calc(25% - 15px);
+  }
+}
+
+@media (min-width: 1200px) {
   .carrosel {
     width: 70%;
+  }
+  .carrosel img {
+    height: 65vh;
+  }
+  .card {
+    width: calc(25% - 20px);
   }
 }
 
