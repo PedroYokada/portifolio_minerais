@@ -1,241 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
 
-  <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portifólio - Geologia</title>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <body>
+    <header class="cabecalho">
+      <h1>Portifólio - Geologia</h1>
+      <a href="#intro">INTRODUÇÃO</a>
+      <a href="#conveccao">CONVECÇÃO DO MAGMA</a>
+      <a href="#mohs">ESCALA DE MOHS</a>
+      <a href="">MENSAGEM FINAL</a>
+    </header>
 
-  <title>Portifólio - Geologia</title>
-</head>
+    <div id="intro" class="divinicial">
+      <h2>Portifólio Geológico</h2>
+      <p>
+        Este portfólio possui caráter acadêmico e tem como finalidade apresentar
+        uma introdução ao campo da Geologia. Nele serão explicados os conceitos
+        fundamentais que permitem compreender o que são minerais e terras raras.
+      </p>
 
-<body>
+      <div class="carrosel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./minerais/1.jpg"
+                class="d-block w-100"
+                alt="Imagem 1"
+              />
+            </div>
 
+            <div class="carousel-item">
+              <img
+                src="./minerais/2.jpg"
+                class="d-block w-100"
+                alt="Imagem 2"
+              />
+            </div>
 
-  <header class="cabecalho">
-    <h1>Portifólio - Geologia</h1>
-    <a href="#intro">INTRODUÇÃO</a>
-    <a href="#conveccao">CONVECÇÃO DO MAGMA</a>
-    <a href="#mohs">ESCALA DE MOHS</a>
-    <a href="./sobremim/index2.html">SOBRE MIM</a>
-  </header>
-
-
-
-  <div id="intro" class="divinicial">
-
-    <h2>Portifólio Geológico</h2>
-    <p>
-      Este portfólio possui caráter acadêmico e tem como finalidade apresentar uma introdução ao campo da Geologia.
-      Nele serão explicados os conceitos fundamentais que permitem compreender o que são minerais e terras raras.
-    </p>
-
-    <div class="carrosel">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="./minerais/1.jpg" class="d-block w-100" alt="Imagem 1">
+            <div class="carousel-item">
+              <img
+                src="https://via.placeholder.com/900x300"
+                class="d-block w-100"
+                alt="Imagem 3"
+              />
+            </div>
           </div>
 
-          <div class="carousel-item">
-            <img src="./minerais/2.jpg" class="d-block w-100" alt="Imagem 2">
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
 
-          <div class="carousel-item">
-            <img src="https://via.placeholder.com/900x300" class="d-block w-100" alt="Imagem 3">
-          </div>
-
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
       </div>
-    </div>
 
-    <div class="texto">
-      <h3>O que é um mineral?</h3>
-      <p>
-        Mineral é um sólido cristalino e inorgânico com composição química definida e propriedades físicas específicas.
-        (WICANDER, R.; MONROE, J.S.; PETERS, E.K. - Fundamentos de Geologia, 2009).
-      </p>
+      <div class="texto">
+        <h3>O que é um mineral?</h3>
+        <p>
+          Mineral é um sólido cristalino e inorgânico com composição química
+          definida e propriedades físicas específicas. (WICANDER, R.; MONROE,
+          J.S.; PETERS, E.K. - Fundamentos de Geologia, 2009).
+        </p>
 
-      <h3>Escala de Mohs</h3>
-      <p>
-        A Escala de Mohs mede a dureza de um mineral — sua capacidade de riscar outro. Não deve ser confundida com
-        tenacidade, que é a resistência de um mineral à quebra.
-      </p>
-    </div>
-  </div>
-
-
-  <div id="conveccao" class="div3">
-    <h2>Convecção de Magma</h2>
-
-
-    <div class="carrosel">
-      <div id="carouselExample2" class="carousel slide">
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg" class="d-block w-100" alt="Convecção de magma">
-          </div>
-
-          <div class="carousel-item">
-            <img src="./minerais/2.jpg" class="d-block w-100" alt="Imagem 2">
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://via.placeholder.com/900x300" class="d-block w-100" alt="Imagem 3">
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="texto">
-      <p>
-        A convecção do magma é um processo fundamental no interior da Terra.
-        O movimento convectivo no manto influencia vulcanismo, formação de rochas e a dinâmica das placas tectônicas.
-
-        Esse processo explica a geração de novas crostas, zonas de subducção e cadeias montanhosas.
-        Também afeta a distribuição de minerais raros na crosta.
-      </p>
-
-      <h3>Importância geológica</h3>
-
-      <p>
-
-      </p>
-    </div>
-  </div>
-
-
-
-  <div id="mohs" class="cards-container">
-
-    <h2>Escala de Mohs</h2>
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/talco-3-1024x683.jpg" alt="Mineral Talco" />
-      <div class="card-body">
-        <h5 class="card-title">Talco - Mg3Si4O10(OH)2</h5>
-        <p class="card-text">O talco é um mineral de alteração característico do metamorfismo de baixo grau que age sob rochas ricas em silicatos de magnésio, sendo comum sua presença em xistos.</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/gipsita-2.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Gipsita - CaSO4·2H2O</h5>
-        <p class="card-text">
-          A gipsita ou gipso é um sulfato de cálcio hidratado amplamente distribuído, gerado a partir da precipitação de sais em processos de evaporação de massas de água isoladas.</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/calcita-6.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Calcita - CaCO3</h5>
-        <p class="card-text">
-          A calcita é um dos principais minerais formadores de rochas (o principal carbonato) e por muitas vezes o predominante em rochas sedimentares, nos calcários; em rochas metamórficas, nos mármores; e nas rochas ígneas.</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/fluorita-6.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Fluorita - CaF2</h5>
-        <p class="card-text">
-          A fluorita é um mineral halogeneto amplamente distribuído, composto principalmente por cálcio e flúor, com a ocasional contaminação de minerais de terras raras. Seus usos tem variado ao longo do tempo, nos últimos anos, por exemplo, tornando-se cada vez mais importante na indústria química.</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/apatita-4.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Apatita - Ca5(PO4)3(OH-,Cl-,F-)</h5>
-        <p class="card-text">
-          Apatita é um nome que abrange tanto um mineral como um grupo mineral inserido nos fosfatos, predominantemente compostos por fosfato de cálcio (mas podendo apresentar teores significativos de flúor, cloro e hidróxido).</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/feldspato-1.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Feldspato/ortoclásio - KAlSi3O8</h5>
-        <p class="card-text">
-          São chamados feldspatos alcalinos principalmente o ortoclásio e o microclínio, como conjunto. A série incluí feldspatos potássicos e também feldspatos que podem conter também diferentes quantidades de sódio na estrutura.
+        <h3>Escala de Mohs</h3>
+        <p>
+          A Escala de Mohs mede a dureza de um mineral — sua capacidade de
+          riscar outro. Não deve ser confundida com tenacidade, que é a
+          resistência de um mineral à quebra.
         </p>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/quartzo-1.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Quartzo - SiO2</h5>
-        <p class="card-text">
-          O quartzo é o principal mineral do grupo de SiO2 dos tectossilicatos. Além de ser formado só por tetraedros de sílica altamente polimerizados, sua estrutura química simples o relaciona à grande variedade de polimorfos de sílica (cristobalita e tridimita, membros do grupo e diferenciados só pelo arranjo tridimensional dos tetraedros de sílica).</p>
+    <div id="conveccao" class="div3">
+      <h2>Convecção de Magma</h2>
+
+      <div class="carrosel">
+        <div id="carouselExample2" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg"
+                class="d-block w-100"
+                alt="Convecção de magma"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./minerais/2.jpg"
+                class="d-block w-100"
+                alt="Imagem 2"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://via.placeholder.com/900x300"
+                class="d-block w-100"
+                alt="Imagem 3"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="texto">
+        <p>
+          A convecção do magma é um processo fundamental no interior da Terra. O
+          movimento convectivo no manto influencia vulcanismo, formação de
+          rochas e a dinâmica das placas tectônicas. Esse processo explica a
+          geração de novas crostas, zonas de subducção e cadeias montanhosas.
+          Também afeta a distribuição de minerais raros na crosta.
+        </p>
+
+        <h3>Importância geológica</h3>
+
+        <p></p>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/topazio-4.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Topázio - Al2SiO4(OH-,F-)2</h5>
-        <p class="card-text">Mineral formado por processos magmáticos, pneumatolíticos e hidrotermais (fluidos hidrotermais e pneumatolíticos de altas temperaturas ricos em voláteis) e metamórficos (metamorfismo de alto grau em sedimentos aluminosos, ricos em quartzo e contendo flúor).</p>
+    <div id="mohs" class="cards-container">
+      <h2>Escala de Mohs</h2>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/talco-3-1024x683.jpg"
+          alt="Mineral Talco"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Talco - Mg3Si4O10(OH)2</h5>
+          <p class="card-text">
+            O talco é um mineral de alteração característico do metamorfismo de
+            baixo grau que age sob rochas ricas em silicatos de magnésio, sendo
+            comum sua presença em xistos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/gipsita-2.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Gipsita - CaSO4·2H2O</h5>
+          <p class="card-text">
+            A gipsita ou gipso é um sulfato de cálcio hidratado amplamente
+            distribuído, gerado a partir da precipitação de sais em processos de
+            evaporação de massas de água isoladas.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/calcita-6.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Calcita - CaCO3</h5>
+          <p class="card-text">
+            A calcita é um dos principais minerais formadores de rochas (o
+            principal carbonato) e por muitas vezes o predominante em rochas
+            sedimentares, nos calcários; em rochas metamórficas, nos mármores; e
+            nas rochas ígneas.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/fluorita-6.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Fluorita - CaF2</h5>
+          <p class="card-text">
+            A fluorita é um mineral halogeneto amplamente distribuído, composto
+            principalmente por cálcio e flúor, com a ocasional contaminação de
+            minerais de terras raras. Seus usos tem variado ao longo do tempo,
+            nos últimos anos, por exemplo, tornando-se cada vez mais importante
+            na indústria química.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/apatita-4.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Apatita - Ca5(PO4)3(OH-,Cl-,F-)</h5>
+          <p class="card-text">
+            Apatita é um nome que abrange tanto um mineral como um grupo mineral
+            inserido nos fosfatos, predominantemente compostos por fosfato de
+            cálcio (mas podendo apresentar teores significativos de flúor, cloro
+            e hidróxido).
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/feldspato-1.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Feldspato/ortoclásio - KAlSi3O8</h5>
+          <p class="card-text">
+            São chamados feldspatos alcalinos principalmente o ortoclásio e o
+            microclínio, como conjunto. A série incluí feldspatos potássicos e
+            também feldspatos que podem conter também diferentes quantidades de
+            sódio na estrutura.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/quartzo-1.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Quartzo - SiO2</h5>
+          <p class="card-text">
+            O quartzo é o principal mineral do grupo de SiO2 dos
+            tectossilicatos. Além de ser formado só por tetraedros de sílica
+            altamente polimerizados, sua estrutura química simples o relaciona à
+            grande variedade de polimorfos de sílica (cristobalita e tridimita,
+            membros do grupo e diferenciados só pelo arranjo tridimensional dos
+            tetraedros de sílica).
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/topazio-4.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Topázio - Al2SiO4(OH-,F-)2</h5>
+          <p class="card-text">
+            Mineral formado por processos magmáticos, pneumatolíticos e
+            hidrotermais (fluidos hidrotermais e pneumatolíticos de altas
+            temperaturas ricos em voláteis) e metamórficos (metamorfismo de alto
+            grau em sedimentos aluminosos, ricos em quartzo e contendo flúor).
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/corindon-1.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Corindon - Al2O3</h5>
+          <p class="card-text">
+            O coríndon é um mineral de óxido de alumínio conhecido pela sua
+            dureza (9, mineral índice da escala Mohs) e pelo seu brilho intenso.
+            Devido a essas características, é muito utilizado como gema em suas
+            diferentes variedades. As principais são a safira (azul) e o rubi
+            (vermelho).
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="http://recursomineralmg.codemge.com.br/wp-content/uploads/2018/10/diamante/image4.png"
+          alt=""
+        />
+        <div class="card-body">
+          <h5 class="card-title">Diamante - C</h5>
+          <p class="card-text">
+            Mineral formado em grande profundidade, onde a pressão em relação ao
+            grau geotérmico permite a sua geração, sendo que quanto maior o grau
+            geotérmico mais profundo o seu ambiente de formação. Dessa forma,
+            este mineral apenas pode aparecer na superfície trazido por magmas
+            de origem profunda e ascensão rápida (kimberlíticos e lamproíticos),
+            pois se a subida for lenta possibilita a transformação para grafita.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/corindon-1.jpg" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Corindon - Al2O3</h5>
-        <p class="card-text">
-          O coríndon é um mineral de óxido de alumínio conhecido pela sua dureza (9, mineral índice da escala Mohs) e pelo seu brilho intenso. Devido a essas características, é muito utilizado como gema em suas diferentes variedades. As principais são a safira (azul) e o rubi (vermelho).</p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="http://recursomineralmg.codemge.com.br/wp-content/uploads/2018/10/diamante/image4.png" alt="" />
-      <div class="card-body">
-        <h5 class="card-title">Diamante - C</h5>
-        <p class="card-text">Mineral formado em grande profundidade, onde a pressão em relação ao grau geotérmico permite a sua geração, sendo que quanto maior o grau geotérmico mais profundo o seu ambiente de formação. Dessa forma, este mineral apenas pode aparecer na superfície trazido por magmas de origem profunda e ascensão rápida (kimberlíticos e lamproíticos), pois se a subida for lenta possibilita a transformação para grafita.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <footer class="rodape">
-    <h1>© 2025 - Pedro Yokada - Todos os direitos reservados</h1>
-  </footer>
-
-</body>
-
+    <footer class="rodape">
+      <h1>© 2025 - Pedro Yokada - Todos os direitos reservados</h1>
+    </footer>
+  </body>
 </html>

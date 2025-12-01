@@ -1,8 +1,8 @@
 body {
-  background-color: #9966cc;
+  background-color: #674f8a;
   margin: 0;
-  font-family: Arial, sans-serif;
   color: white;
+  font-family: "Literata", serif;
 }
 
 html {
@@ -13,7 +13,7 @@ p,
 a,
 button,
 span {
-  font-family: "Comic Neue", cursive;
+  font-family: "Literata", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -24,16 +24,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Comic Neue", cursive;
+  font-family: "Literata", serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .cabecalho {
-  background-color: #1e90ff;
+  background-color: #1e6fc0;
   padding: 20px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -52,7 +51,7 @@ h6 {
 }
 
 .cabecalho a:hover {
-  color: #66ccff;
+  color: #8b0000;
 }
 
 .divinicial,
@@ -114,13 +113,17 @@ h6 {
   margin-bottom: 25px;
   font-size: 28px;
   font-weight: bold;
+  color: white;
 }
 
 .cards-container .card:hover {
   border-color: #66ccff;
-  background-color: #9966cc;
+  background-color: #708090;
   transform: scale(1.03);
-  color: #ffffff;
+}
+
+.cards-container .card:hover p {
+  color: white;
 }
 
 @media (min-width: 900px) {
@@ -136,7 +139,7 @@ h6 {
 }
 
 .rodape {
-  background-color: #1e90ff;
+  background-color: #1e6fc0;
   padding: 20px;
   color: white;
   text-align: center;
