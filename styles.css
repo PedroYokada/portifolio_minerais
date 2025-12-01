@@ -54,7 +54,7 @@ h6 {
 .div3 {
   background-color: #1e6fc0;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 40px auto;
   width: 90%;
   max-width: 1200px;
@@ -63,6 +63,14 @@ h6 {
   align-items: center;
   gap: 20px;
   text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.divinicial:hover,
+.div3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
 }
 
 .div3 p {
@@ -79,10 +87,42 @@ h6 {
 
 .carrosel img {
   width: 100%;
-  height: 35vh;
+  max-height: 50vh;
+  border-radius: 8px;
+  transition: 0.4s ease;
   object-fit: cover;
-  border-radius: 12px;
-  transition: height 0.4s ease, width 0.4s ease, border-radius 0.3s ease;
+}
+
+.carrosel img.imagem-vertical {
+  object-fit: contain;
+  background-color: #000;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #674f8a;
+  padding: 18px;
+  border-radius: 50%;
+  filter: invert(1);
+  transform: scale(1.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #674f8a;
+  transform: scale(1.32);
 }
 
 .cards-container {
@@ -96,6 +136,7 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .cards-container h2 {
@@ -105,6 +146,11 @@ h6 {
   font-size: 28px;
   font-weight: bold;
   color: white;
+}
+
+.cards-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
 }
 
 .card {
