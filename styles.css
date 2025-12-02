@@ -131,15 +131,14 @@ h6 {
 
 .carrosel img {
   width: 100%;
-  max-height: 50vh;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: 0.4s ease;
-}
+  height: auto;
+  max-height: 70vh;
 
-.carrosel img.imagem-vertical {
   object-fit: contain;
+
   background-color: #000;
+
+  border-radius: 8px;
 }
 
 .carousel-control-prev,
@@ -224,18 +223,12 @@ h6 {
 }
 
 @media (min-width: 576px) {
-  .carrosel img {
-    height: 45vh;
-  }
   .card {
     width: calc(50% - 10px);
   }
 }
 
 @media (min-width: 768px) {
-  .carrosel img {
-    height: 50vh;
-  }
   .card {
     width: calc(33.33% - 14px);
   }
@@ -246,9 +239,7 @@ h6 {
     width: 80%;
     margin: 0 auto;
   }
-  .carrosel img {
-    height: 60vh;
-  }
+
   .card {
     width: calc(25% - 15px);
   }
@@ -258,9 +249,7 @@ h6 {
   .carrosel {
     width: 70%;
   }
-  .carrosel img {
-    height: 65vh;
-  }
+
   .card {
     width: calc(25% - 20px);
   }
