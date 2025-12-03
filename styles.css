@@ -106,14 +106,23 @@ h6 {
 }
 
 .cabecalho a {
-  color: white;
+  position: relative;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.22s ease, color 0.22s ease,
+    transform 0.12s ease;
+  color: #ffffff; /* cor padrão */
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
 }
 
-.cabecalho a:hover {
-  color: #8b0000;
+.cabecalho a:hover,
+.cabecalho a:focus {
+  background-color: rgba(255, 255, 255, 0.10); 
+  border: 1px solid rgba(255, 215, 0, 0.35); 
+  color: #000000; 
+  transform: translateY(-2px);
+  outline: none;
 }
 
 .divinicial {
