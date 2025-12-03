@@ -15,3 +15,13 @@
 // }
 
 // setInterval(carrosel, 1800);
+
+// script.js
+window.addEventListener("scroll", function () {
+  const cabecalho = document.querySelector(".cabecalho");
+  if (window.scrollY > 50) {
+    cabecalho.style.backgroundColor = "rgba(30, 111, 192, 0.5)";
+  } else {
+    cabecalho.style.backgroundColor = "rgba(30, 111, 192, 1)";
+  }
+});

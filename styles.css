@@ -3,6 +3,7 @@ body {
   margin: 0;
   color: white;
   font-family: "Literata", serif;
+  padding-top: 100px;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 strong {
-  color: #ffd700; /* amarelo dourado */
+  color: #ffd700;
 }
 
 p,
@@ -74,17 +75,33 @@ h6 {
 }
 
 .cabecalho {
-  background-color: #1e6fc0;
-  padding: 20px;
+  background-color: rgba(30, 111, 192, 1);
+  padding: 10px 20px;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s, padding 0.3s;
+  height: auto;
+}
+
+.cabecalho.scrolled {
+  background-color: rgba(30, 111, 192, 0.5);
+  padding: 5px 20px;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 3.5rem;
 }
 
 .cabecalho nav {
   display: flex;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -92,6 +109,7 @@ h6 {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .cabecalho a:hover {
