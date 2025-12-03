@@ -287,32 +287,32 @@ h6 {
   color: white;
 }
 
-/* ================== AJUSTE DA NAV PARA CELULAR (VERSÃO OTIMIZADA) ================== */
 @media (max-width: 480px) {
   .cabecalho {
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    padding: 10px 8px;
+    gap: 14px;
+    padding: 22px 12px;
+    min-height: 150px;
+    height: auto !important;
   }
 
   .cabecalho h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   .cabecalho nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
     width: 100%;
+    row-gap: 10px;
   }
 
   .cabecalho a {
-    font-size: 0.8rem;
-    padding: 4px 6px;
-    border-radius: 6px;
+    font-size: 0.95rem;
+    padding: 8px 12px;
   }
 }
 
@@ -359,7 +359,6 @@ h6 {
   }
 }
 
-/* ================== RODAPÉ ================== */
 .rodape {
   background-color: #1e6fc0;
   padding: 20px;
