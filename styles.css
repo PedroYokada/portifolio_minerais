@@ -87,7 +87,9 @@ h6 {
   width: 100%;
   z-index: 10;
   transition: background-color 0.3s, padding 0.3s;
-  height: auto;
+  min-height: 100px; 
+  height: auto;      
+  flex-wrap: wrap;  
 }
 
 .cabecalho.scrolled {
@@ -103,6 +105,8 @@ h6 {
 .cabecalho nav {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; /* Permite que os links quebrem a linha */
+  justify-content: center; /* Centraliza os links */
 }
 
 .cabecalho a {
@@ -111,9 +115,11 @@ h6 {
   border-radius: 8px;
   transition: background-color 0.22s ease, color 0.22s ease,
     transform 0.12s ease;
-  color: #ffffff; /* cor padrão */
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
+  min-width: 120px;
+  text-align: center; 
 }
 
 .cabecalho a:hover,
@@ -288,42 +294,45 @@ h6 {
 }
 
 @media (max-width: 480px) {
+
   .cabecalho {
     flex-direction: column;
     align-items: center;
-    gap: 14px;
-    padding: 22px 12px;
-    min-height: 150px;
-    height: auto !important;
+    padding: 25px 10px;
+    height: auto;
+    min-height: 220px; 
   }
 
+
   .cabecalho h1 {
-    font-size: 1.7rem;
+    width: 100%;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     text-align: center;
-    line-height: 1.2;
+    display: block;
   }
 
   .cabecalho nav {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    row-gap: 10px;
+    gap: 12px;
   }
 
   .cabecalho a {
     font-size: 0.95rem;
-    padding: 8px 12px;
+    padding: 10px 14px;
+    min-width: 140px;
+    text-align: center;
+  }
+
+
+  body {
+    padding-top: 240px !important;
   }
 }
 
-@media (min-width: 576px) {
-  .carrosel .carousel-inner {
-    height: 45vh;
-  }
-  .card {
-    width: calc(50% - 10px);
-  }
-}
 
 @media (min-width: 768px) {
   .carrosel .carousel-inner {
