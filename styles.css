@@ -105,8 +105,8 @@ h6 {
 .cabecalho nav {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* Permite que os links quebrem a linha */
-  justify-content: center; /* Centraliza os links */
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 .cabecalho a {
@@ -133,7 +133,7 @@ h6 {
 
 .icon-volcano {
   color: #000 !important;
-  font-size: 42px; /* ajuste como quiser */
+  font-size: 42px; 
   margin-right: 10px;
 }
 
