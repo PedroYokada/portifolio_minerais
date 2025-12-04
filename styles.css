@@ -131,6 +131,12 @@ h6 {
   outline: none;
 }
 
+.icon-volcano {
+  color: #000 !important;
+  font-size: 42px;   /* ajuste como quiser */
+  margin-right: 10px;
+}
+
 .divinicial {
   background-color: #1e6fc0;
   padding: 30px;
