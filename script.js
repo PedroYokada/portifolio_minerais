@@ -1,27 +1,30 @@
-// const imgs = document.getElementById("img");
-// const img = document.querySelectorAll("#img img");
+const cabecalho = document.querySelector(".cabecalho");
 
-// let idx = 0;
+function atualizarEstadoCabecalho() {
+  if (!cabecalho) return;
+  cabecalho.classList.toggle("scrolled", window.scrollY > 50);
+}
 
-// function carrosel() {
-//   idx++;
+function atualizarAlturaCabecalho() {
+  if (!cabecalho) return;
+  document.documentElement.style.setProperty(
+    "--header-height",
+    `${cabecalho.offsetHeight}px`
+  );
+}
 
-//   if (idx > img.length - 1) {
-//     idx = 0;
-//   }
+function atualizarCabecalho() {
+  atualizarEstadoCabecalho();
+  atualizarAlturaCabecalho();
+}
 
-//   // imgs.style.transform = `translateX(${-idx *550}px)`;
-//   imgs.style.transform = `translateX(${-idx * img[0].clientWidth}px)`;
-// }
+window.addEventListener("scroll", atualizarEstadoCabecalho, { passive: true });
+window.addEventListener("resize", atualizarAlturaCabecalho);
+window.addEventListener("load", atualizarCabecalho);
 
-// setInterval(carrosel, 1800);
+document.addEventListener("DOMContentLoaded", atualizarCabecalho);
 
-// script.js
-window.addEventListener("scroll", function () {
-  const cabecalho = document.querySelector(".cabecalho");
-  if (window.scrollY > 50) {
-    cabecalho.style.backgroundColor = "rgba(30, 111, 192, 0.5)";
-  } else {
-    cabecalho.style.backgroundColor = "rgba(30, 111, 192, 1)";
-  }
-});
+if (cabecalho && "ResizeObserver" in window) {
+  const observadorCabecalho = new ResizeObserver(atualizarAlturaCabecalho);
+  observadorCabecalho.observe(cabecalho);
+}

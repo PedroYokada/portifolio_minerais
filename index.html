@@ -1,550 +1,731 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <script src="script.js" defer></script>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-
-
-  <title>Portifólio - Geologia</title>
-</head>
-
-<body>
-  <header class="cabecalho">
-    <h1>
-      <i class="fa-solid fa-volcano icon-volcano" aria-hidden="true"></i>
-      Geologia - Portifólio
-    </h1>
-
-    <nav class="menu">
-      <a href="#intro"><i class="fa-solid fa-book-open"></i> INTRODUÇÃO</a>
-      <a href="#conveccao"><i class="fa-solid fa-earth-americas"></i> GEOLOGIA DA TERRA</a>
-      <a href="#mohs"><i class="fa-solid fa-gem"></i> ESCALA DE MOHS</a>
-      <a href="#terras"><i class="fa-solid fa-mountain"></i> ROCHAS</a>
-      <a href="#hutton"><i class="fa-solid fa-flag-checkered"></i> MENSAGEM FINAL</a>
-    </nav>
-  </header>
-
-  <div id="intro" class="divinicial">
-    <h2>Portifólio Geológico</h2>
-    <p>
-      Este portfólio possui caráter acadêmico e tem como finalidade apresentar
-      uma introdução ao campo da Geologia. Nele serão explicados os conceitos
-      fundamentais que permitem compreender o que são minerais, processos geológicos e tipos de rocha.
-    </p>
-
-    <div class="carrosel">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.pixabay.com/photo/2020/05/26/02/51/natural-stone-5221189_1280.jpg"
-              class="d-block w-100" alt="Cristais de ametista" />
-          </div>
-          <div class="carousel-item">
-            <img src="./minerais/3.jpg" class="d-block w-100" alt="Escala de Mohs" />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./minerais/rochas.jpg"
-              class="d-block w-100" alt="Escala de Mohs" />
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&amp;family=Sofia+Sans+Extra+Condensed:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Portifólio - Geologia</title>
+    <script
+      defer="True"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer="True" src="script.js"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>
+        <i aria-hidden="true" class="fa-solid fa-volcano icon-volcano"> </i>
+        Geologia - Portifólio
+      </h1>
+      <nav aria-label="Navegação principal" class="menu">
+        <a href="#intro">
+          <i class="fa-solid fa-book-open"> </i>
+          INTRODUÇÃO
+        </a>
+        <a href="#conveccao">
+          <i class="fa-solid fa-earth-americas"> </i>
+          GEOLOGIA DA TERRA
+        </a>
+        <a href="#mohs">
+          <i class="fa-solid fa-gem"> </i>
+          ESCALA DE MOHS
+        </a>
+        <a href="#terras">
+          <i class="fa-solid fa-mountain"> </i>
+          ROCHAS
+        </a>
+        <a href="#hutton">
+          <i class="fa-solid fa-flag-checkered"> </i>
+          MENSAGEM FINAL
+        </a>
+      </nav>
+    </header>
+    <main class="conteudo-principal">
+      <section class="divinicial painel" id="intro">
+        <h2>Portifólio Geológico</h2>
+        <p>
+          Este portfólio possui caráter acadêmico e tem como finalidade
+          apresentar uma introdução ao campo da Geologia. Nele serão explicados
+          os conceitos fundamentais que permitem compreender o que são minerais,
+          processos geológicos e tipos de rocha.
+        </p>
+        <div class="carrosel">
+          <div
+            class="carousel slide"
+            data-bs-ride="carousel"
+            id="carouselExample"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  alt="Cristais de ametista"
+                  class="d-block w-100"
+                  src="https://cdn.pixabay.com/photo/2020/05/26/02/51/natural-stone-5221189_1280.jpg"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Imagem relacionada à Escala de Mohs"
+                  class="d-block w-100"
+                  src="./minerais/3.jpg"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Exemplos de tipos de rochas"
+                  class="d-block w-100"
+                  src="./minerais/rochas.jpg"
+                />
+              </div>
+            </div>
+            <button
+              aria-label="Imagem anterior"
+              class="carousel-control-prev"
+              data-bs-slide="prev"
+              data-bs-target="#carouselExample"
+              type="button"
+            >
+              <span class="carousel-control-prev-icon"> </span>
+              <span class="visually-hidden"> Anterior </span>
+            </button>
+            <button
+              aria-label="Próxima imagem"
+              class="carousel-control-next"
+              data-bs-slide="next"
+              data-bs-target="#carouselExample"
+              type="button"
+            >
+              <span class="carousel-control-next-icon"> </span>
+              <span class="visually-hidden"> Próximo </span>
+            </button>
           </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
-
-
-    </div>
-
-    <div class="texto">
-      <h3>O que é um mineral?</h3>
-      <p>
-        <strong>Mineral</strong> é um <strong>sólido cristalino e inorgânico</strong> com <strong>composição química
-          definida</strong> e <strong>propriedades físicas específicas</strong>.
-        (WICANDER, R.; MONROE, J.S.; PETERS, E.K. - Fundamentos de Geologia, 2009).
-      </p>
-
-
-      <h3>Escala de Mohs</h3>
-
-      <p>
-        A <strong>Escala de Mohs</strong> mede a <strong>dureza</strong> de um <strong>mineral</strong> — sua capacidade
-        de
-        <strong>riscar</strong> outro. Não deve ser confundida com <strong>tenacidade</strong>, que é a
-        <strong>resistência</strong> de um <strong>mineral</strong> à <strong>quebra</strong>.
-      </p>
-
-
-      <h3>Tipos de Rocha</h3>
-      <p>As rochas da Terra são classificadas em três tipos principais: ígneas, metamórficas e sedimentares.</p>
-
-      <p><strong>Rochas ígneas:</strong> Formadas pelo resfriamento do magma ou lava, podem ser intrusivas (cristais
-        grandes, como granito) ou extrusivas (grão fino, como basalto).</p>
-
-      <p><strong>Rochas metamórficas:</strong> Transformação de rochas pré-existentes por pressão e temperatura,
-        formando estruturas como mármore e gnaisse.</p>
-
-      <p><strong>Rochas sedimentares:</strong> Compactação de sedimentos ou restos de organismos, formando camadas
-        visíveis e fósseis, como arenito e calcário.</p>
-    </div>
-  </div>
-
-  <div id="conveccao" class="div3">
-    <h2>Geologia da Terra</h2>
-
-    <div class="carrosel">
-      <div id="carouselExample2" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="https://clebinho.pro.br/wp/wp-content/uploads/2016/05/AnchoredDarlingLarva-small.gif"
-              class="d-block w-100" alt="Imagem 3" />
-          </div>
-
-          <div class="carousel-item">
-            <img
-              src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/55776420_2291654691057108_4877972895562727424_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeET8tJYfUSXmkPDLHu34HjJS4i4j7kLE7xLiLiPuQsTvJ7Xbk6s8Lu9Eq1UmL83w7jbHx2XMcoCzGdGkndmCn7S&_nc_ohc=ChpCFKN9ikIQ7kNvwHTnGcV&_nc_oc=AdnI1n0skmzMMKL9kh2q8B6drW1CKovXTLEiCeISujQcbl9IQqKqsqFK7dVGw0t5LvA&_nc_zt=23&_nc_ht=scontent.fcgh2-1.fna&_nc_gid=BPsEigeky0cJ9B7lsChV3A&oh=00_AfnLhFl9I3uYuulfYsaQ08WRU4ZWCMNitNYS9SCXkwtPMA&oe=6956A936"
-              class="d-block w-100" alt="Convecção de magma" />
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://wp.ufpel.edu.br/museudesolosrochaseminerais/files/2020/10/Ciclo-das-Rochas-1.jpg"
-              class="d-block w-100" alt="Imagem 4" />
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://img.genially.com/611d50499c307a0012690808/e4f90135-c5a8-43a9-b3da-29fbf58de520.gif"
-              class="d-block w-100" alt="Convecção de magma" />
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://i.makeagif.com/media/9-06-2016/7yLBZY.gif" class="d-block w-100"
-              alt="Convecção de magma" />
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://www.learner.org/wp-content/interactive/dynamicearth/otherboundaries/images/fault.gif"
-              class="d-block w-100" alt="Convecção de magma" />
-          </div>
-
-          <div class="carousel-item active">
-            <img
-              src="https://i0.wp.com/jornalforcadovale.com.br/wp-content/uploads/2023/02/Screenshot_55-1.jpg?w=891&ssl=1"
-              class="d-block w-100" alt="Convecção de magma" />
-          </div>
-
-
-
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg" class="d-block w-100"
-              alt="Convecção de magma" />
-          </div>
-
-
+        <div class="texto">
+          <h3>O que é um mineral?</h3>
+          <p>
+            <strong> Mineral </strong>
+            é um
+            <strong> sólido cristalino e inorgânico </strong>
+            com
+            <strong> composição química definida </strong>
+            e
+            <strong> propriedades físicas específicas </strong>
+            . (WICANDER, R.; MONROE, J.S.; PETERS, E.K. - Fundamentos de
+            Geologia, 2009).
+          </p>
+          <h3>Escala de Mohs</h3>
+          <p>
+            A
+            <strong> Escala de Mohs </strong>
+            mede a
+            <strong> dureza </strong>
+            de um
+            <strong> mineral </strong>
+            — sua capacidade de
+            <strong> riscar </strong>
+            outro. Não deve ser confundida com
+            <strong> tenacidade </strong>
+            , que é a
+            <strong> resistência </strong>
+            de um
+            <strong> mineral </strong>
+            à
+            <strong> quebra </strong>
+            .
+          </p>
+          <h3>Tipos de Rocha</h3>
+          <p>
+            As rochas da Terra são classificadas em três tipos principais:
+            ígneas, metamórficas e sedimentares.
+          </p>
+          <p>
+            <strong> Rochas ígneas: </strong>
+            Formadas pelo resfriamento do magma ou lava, podem ser intrusivas
+            (cristais grandes, como granito) ou extrusivas (grão fino, como
+            basalto).
+          </p>
+          <p>
+            <strong> Rochas metamórficas: </strong>
+            Transformação de rochas pré-existentes por pressão e temperatura,
+            formando estruturas como mármore e gnaisse.
+          </p>
+          <p>
+            <strong> Rochas sedimentares: </strong>
+            Compactação de sedimentos ou restos de organismos, formando camadas
+            visíveis e fósseis, como arenito e calcário.
+          </p>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="texto">
-
-      <p><strong>Camadas da Terra:</strong> A <strong>crosta</strong> é a camada externa. O <strong>manto</strong>
-        possui <strong>convecção de magma</strong>, que gera <strong>vulcanismo</strong>, <strong>formação de
-          rochas</strong> e <strong>placas tectônicas</strong>. No centro está o <strong>núcleo</strong>, responsável
-        pelo <strong>campo magnético</strong>. <strong>Autores:</strong> Press & Siever (1994), Tarbuck & Lutgens
-        (2017).</p>
-
-      <p><strong>Convecção de Magma:</strong> É o movimento do <strong>magma</strong> no <strong>manto</strong>, causado
-        pelo calor interno da Terra. Esse processo faz com que materiais mais quentes subam e os mais frios desçam,
-        gerando <strong>correntes convectivas</strong>. A <strong>convecção de magma</strong> é responsável por
-        impulsionar o <strong>vulcanismo</strong>, a <strong>formação de novas crostas</strong>, as <strong>zonas de
-          subducção</strong> e até <strong>cadeias montanhosas</strong>, além de influenciar a <strong>distribuição de
-          minerais raros</strong> na crosta. <strong>Autores:</strong> Fowler (2005), Kearey, Klepeis & Vine (2009).</p>
-
-      <p>
-        <strong>Limites de Placas:</strong> Existem três tipos principais.
-        Nos <strong>limites divergentes</strong>, as placas se afastam e formam nova crosta oceânica.
-        Nos <strong>limites convergentes</strong>, elas colidem, gerando montanhas ou zonas de subducção.
-        Já nos <strong>limites transformantes</strong>, as placas deslizam lateralmente, causando terremotos.
-        <strong>Autores:</strong>
-        <span class="autor">Turcotte & Schubert (2014)</span>,
-        <span class="autor">Condie (2016)</span>
-      </p>
-
-      <p><strong>Ciclo das Rochas:</strong> As <strong>rochas ígneas</strong> vêm do magma. Com <strong>erosão</strong>
-        e <strong>sedimentação</strong> formam <strong>rochas sedimentares</strong>. Sob calor e pressão viram
-        <strong>rochas metamórficas</strong>, que podem fundir e reiniciar o ciclo. <strong>Autores:</strong> Marshak
-        (2019), Monroe & Wicander (2011).
-      </p>
-
-    </div>
-  </div>
-
-  <div id="mohs" class="cards-container">
-    <h2>Escala de Mohs</h2>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/talco-3-1024x683.jpg" alt="Mineral Talco" />
-      <div class="card-body">
-        <h5 class="card-title">Talco - Mg3Si4O10(OH)2</h5>
-        <p class="card-text">
-          O talco é um mineral de alteração característico do metamorfismo de
-          baixo grau que age sob rochas ricas em silicatos de magnésio, sendo
-          comum sua presença em xistos.
+      </section>
+      <section class="div3 painel" id="conveccao">
+        <h2>Geologia da Terra</h2>
+        <div class="carrosel">
+          <div class="carousel slide" id="carouselExample2">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  alt="Representação de processos geológicos da Terra"
+                  class="d-block w-100"
+                  src="https://clebinho.pro.br/wp/wp-content/uploads/2016/05/AnchoredDarlingLarva-small.gif"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Representação da convecção no interior da Terra"
+                  class="d-block w-100"
+                  src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/55776420_2291654691057108_4877972895562727424_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeET8tJYfUSXmkPDLHu34HjJS4i4j7kLE7xLiLiPuQsTvJ7Xbk6s8Lu9Eq1UmL83w7jbHx2XMcoCzGdGkndmCn7S&amp;_nc_ohc=ChpCFKN9ikIQ7kNvwHTnGcV&amp;_nc_oc=AdnI1n0skmzMMKL9kh2q8B6drW1CKovXTLEiCeISujQcbl9IQqKqsqFK7dVGw0t5LvA&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgh2-1.fna&amp;_nc_gid=BPsEigeky0cJ9B7lsChV3A&amp;oh=00_AfnLhFl9I3uYuulfYsaQ08WRU4ZWCMNitNYS9SCXkwtPMA&amp;oe=6956A936"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Diagrama do ciclo das rochas"
+                  class="d-block w-100"
+                  src="https://wp.ufpel.edu.br/museudesolosrochaseminerais/files/2020/10/Ciclo-das-Rochas-1.jpg"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Animação de processos tectônicos"
+                  class="d-block w-100"
+                  src="https://img.genially.com/611d50499c307a0012690808/e4f90135-c5a8-43a9-b3da-29fbf58de520.gif"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Animação de movimento de placas tectônicas"
+                  class="d-block w-100"
+                  src="https://i.makeagif.com/media/9-06-2016/7yLBZY.gif"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Animação de falha geológica"
+                  class="d-block w-100"
+                  src="https://www.learner.org/wp-content/interactive/dynamicearth/otherboundaries/images/fault.gif"
+                />
+              </div>
+              <div class="carousel-item active">
+                <img
+                  alt="Representação de placas tectônicas"
+                  class="d-block w-100"
+                  src="https://i0.wp.com/jornalforcadovale.com.br/wp-content/uploads/2023/02/Screenshot_55-1.jpg?w=891&amp;ssl=1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Representação de estrutura geológica"
+                  class="d-block w-100"
+                  src="https://i.pinimg.com/1200x/b3/61/b2/b361b24182b0f6f88c637f46de019820.jpg"
+                />
+              </div>
+            </div>
+            <button
+              aria-label="Imagem anterior"
+              class="carousel-control-prev"
+              data-bs-slide="prev"
+              data-bs-target="#carouselExample2"
+              type="button"
+            >
+              <span class="carousel-control-prev-icon"> </span>
+              <span class="visually-hidden"> Anterior </span>
+            </button>
+            <button
+              aria-label="Próxima imagem"
+              class="carousel-control-next"
+              data-bs-slide="next"
+              data-bs-target="#carouselExample2"
+              type="button"
+            >
+              <span class="carousel-control-next-icon"> </span>
+              <span class="visually-hidden"> Próximo </span>
+            </button>
+          </div>
+        </div>
+        <div class="texto">
+          <p>
+            <strong> Camadas da Terra: </strong>
+            A
+            <strong> crosta </strong>
+            é a camada externa. O
+            <strong> manto </strong>
+            possui
+            <strong> convecção de magma </strong>
+            , que gera
+            <strong> vulcanismo </strong>
+            ,
+            <strong> formação de rochas </strong>
+            e
+            <strong> placas tectônicas </strong>
+            . No centro está o
+            <strong> núcleo </strong>
+            , responsável pelo
+            <strong> campo magnético </strong>
+            .
+            <strong> Autores: </strong>
+            Press &amp; Siever (1994), Tarbuck &amp; Lutgens (2017).
+          </p>
+          <p>
+            <strong> Convecção de Magma: </strong>
+            É o movimento do
+            <strong> magma </strong>
+            no
+            <strong> manto </strong>
+            , causado pelo calor interno da Terra. Esse processo faz com que
+            materiais mais quentes subam e os mais frios desçam, gerando
+            <strong> correntes convectivas </strong>
+            . A
+            <strong> convecção de magma </strong>
+            é responsável por impulsionar o
+            <strong> vulcanismo </strong>
+            , a
+            <strong> formação de novas crostas </strong>
+            , as
+            <strong> zonas de subducção </strong>
+            e até
+            <strong> cadeias montanhosas </strong>
+            , além de influenciar a
+            <strong> distribuição de minerais raros </strong>
+            na crosta.
+            <strong> Autores: </strong>
+            Fowler (2005), Kearey, Klepeis &amp; Vine (2009).
+          </p>
+          <p>
+            <strong> Limites de Placas: </strong>
+            Existem três tipos principais. Nos
+            <strong> limites divergentes </strong>
+            , as placas se afastam e formam nova crosta oceânica. Nos
+            <strong> limites convergentes </strong>
+            , elas colidem, gerando montanhas ou zonas de subducção. Já nos
+            <strong> limites transformantes </strong>
+            , as placas deslizam lateralmente, causando terremotos.
+            <strong> Autores: </strong>
+            <span class="autor"> Turcotte &amp; Schubert (2014) </span>
+            ,
+            <span class="autor"> Condie (2016) </span>
+          </p>
+          <p>
+            <strong> Ciclo das Rochas: </strong>
+            As
+            <strong> rochas ígneas </strong>
+            vêm do magma. Com
+            <strong> erosão </strong>
+            e
+            <strong> sedimentação </strong>
+            formam
+            <strong> rochas sedimentares </strong>
+            . Sob calor e pressão viram
+            <strong> rochas metamórficas </strong>
+            , que podem fundir e reiniciar o ciclo.
+            <strong> Autores: </strong>
+            Marshak (2019), Monroe &amp; Wicander (2011).
+          </p>
+        </div>
+      </section>
+      <section class="cards-container painel" id="mohs">
+        <h2>Escala de Mohs</h2>
+        <article class="card">
+          <img
+            alt="Mineral Talco"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/talco-3-1024x683.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Talco - Mg3Si4O10(OH)2</h5>
+            <p class="card-text">
+              O talco é um mineral de alteração característico do metamorfismo
+              de baixo grau que age sob rochas ricas em silicatos de magnésio,
+              sendo comum sua presença em xistos.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Gipsita"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/gipsita-2.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gipsita - CaSO4·2H2O</h5>
+            <p class="card-text">
+              A gipsita ou gipso é um sulfato de cálcio hidratado amplamente
+              distribuído, gerado a partir da precipitação de sais em processos
+              de evaporação de massas de água isoladas.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Calcita"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/calcita-6.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Calcita - CaCO3</h5>
+            <p class="card-text">
+              A calcita é um dos principais minerais formadores de rochas (o
+              principal carbonato) e por muitas vezes o predominante em rochas
+              sedimentares, nos calcários; em rochas metamórficas, nos mármores;
+              e nas rochas ígneas.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Fluorita"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/fluorita-6.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Fluorita - CaF2</h5>
+            <p class="card-text">
+              A fluorita é um mineral halogeneto amplamente distribuído,
+              composto principalmente por cálcio e flúor, com a ocasional
+              contaminação de minerais de terras raras. Seus usos tem variado ao
+              longo do tempo, nos últimos anos, por exemplo, tornando-se cada
+              vez mais importante na indústria química.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Apatita"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/apatita-4.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Apatita - Ca5(PO4)3(OH-,Cl-,F-)</h5>
+            <p class="card-text">
+              Apatita é um nome que abrange tanto um mineral como um grupo
+              mineral inserido nos fosfatos, predominantemente compostos por
+              fosfato de cálcio (mas podendo apresentar teores significativos de
+              flúor, cloro e hidróxido).
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Feldspato/ortoclásio"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/feldspato-1.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Feldspato/ortoclásio - KAlSi3O8</h5>
+            <p class="card-text">
+              São chamados feldspatos alcalinos principalmente o ortoclásio e o
+              microclínio, como conjunto. A série incluí feldspatos potássicos e
+              também feldspatos que podem conter também diferentes quantidades
+              de sódio na estrutura.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Quartzo"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/quartzo-1.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Quartzo - SiO2</h5>
+            <p class="card-text">
+              O quartzo é o principal mineral do grupo de SiO2 dos
+              tectossilicatos. Além de ser formado só por tetraedros de sílica
+              altamente polimerizados, sua estrutura química simples o relaciona
+              à grande variedade de polimorfos de sílica (cristobalita e
+              tridimita, membros do grupo e diferenciados só pelo arranjo
+              tridimensional dos tetraedros de sílica).
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Topázio"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/topazio-4.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Topázio - Al2SiO4(OH-,F-)2</h5>
+            <p class="card-text">
+              Mineral formado por processos magmáticos, pneumatolíticos e
+              hidrotermais (fluidos hidrotermais e pneumatolíticos de altas
+              temperaturas ricos em voláteis) e metamórficos (metamorfismo de
+              alto grau em sedimentos aluminosos, ricos em quartzo e contendo
+              flúor).
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Coríndon"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/corindon-1.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Corindon - Al2O3</h5>
+            <p class="card-text">
+              O coríndon é um mineral de óxido de alumínio conhecido pela sua
+              dureza (9, mineral índice da escala Mohs) e pelo seu brilho
+              intenso. Devido a essas características, é muito utilizado como
+              gema em suas diferentes variedades. As principais são a safira
+              (azul) e o rubi (vermelho).
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Diamante"
+            src="https://cdn.crusoe.com.br/uploads/2025/09/diamante.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Diamante - C</h5>
+            <p class="card-text">
+              Mineral formado em grande profundidade, onde a pressão em relação
+              ao grau geotérmico permite a sua geração, sendo que quanto maior o
+              grau geotérmico mais profundo o seu ambiente de formação. Dessa
+              forma, este mineral apenas pode aparecer na superfície trazido por
+              magmas de origem profunda e ascensão rápida (kimberlíticos e
+              lamproíticos), pois se a subida for lenta possibilita a
+              transformação para grafita.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="cards-container painel" id="terras">
+        <h2>Rochas</h2>
+        <article class="card">
+          <img
+            alt="Riolito"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/109-Riolitos.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Riolito</h5>
+            <p class="card-text">
+              O riolito é uma rocha ígnea vulcânica rica em sílica,
+              composicionalmente semelhante ao granito. É formado principalmente
+              por quartzo, plagioclásio e feldspato alcalino, apresentando
+              textura afanítica, com cristais muito finos, podendo conter
+              fenocristais imersos em matriz vítrea. Devido ao alto teor de
+              sílica, seu magma é muito viscoso e pouco fluido, o que favorece
+              erupções explosivas e a produção de cinzas vulcânicas. Quando a
+              lava riolítica resfria rapidamente na superfície, pode formar
+              vidro vulcânico, como a obsidiana.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Obsidiana"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/obsidiana-2.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Obsidiana</h5>
+            <p class="card-text">
+              O vidro vulcânico é uma rocha ígnea formada pelo resfriamento
+              extremamente rápido da lava, o que impede a cristalização. Lavas
+              ricas em sílica geram vidro com mais facilidade, e quando esse
+              material apresenta cristais visíveis é chamado de vitrófiro. A
+              obsidiana é um vidro vulcânico escuro, de brilho marcante e
+              fratura conchoidal, muito usada desde a pré-história. Em erupções
+              explosivas, o vidro pode conter vesículas: quando muito leve e
+              vesiculado forma o púmice, e quando mais denso forma a escória.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Basalto"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/126-Basalto.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Basalto</h5>
+            <p class="card-text">
+              O basalto é uma rocha ígnea vulcânica, escura e de textura fina,
+              formada pelo rápido resfriamento do magma basáltico, pobre em
+              sílica e rico em minerais máficos. Sua composição é dominada por
+              plagioclásio, piroxênio e, por vezes, olivina. Pode apresentar
+              textura afanítica ou porfirítica e conter vesículas ou amígdalas.
+              Seu equivalente intrusivo é o gabro. No Rio Grande do Sul,
+              basaltos são conhecidos por abrigar geodos de ametista e ágata. O
+              andesito é uma rocha intermediária entre o basalto e o riolito.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Granito Porfirítico"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/103-Granito-Porfir%C3%ADtico.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Granito Porfirítico</h5>
+            <p class="card-text">
+              O granito porfirítico é um granito que apresenta grandes cristais
+              de feldspato alcalino, chamados megacristais, destacados em uma
+              matriz de grãos menores, o que caracteriza sua textura
+              porfirítica. Essa textura surge quando alguns minerais crescem
+              mais rapidamente durante o resfriamento do magma. Sua cor varia
+              conforme o feldspato alcalino, podendo ser branca, cinza, rosa,
+              vermelha ou verde. A composição é semelhante à dos granitos
+              comuns, predominando feldspato alcalino, quartzo e plagioclásio,
+              além de minerais como biotita, muscovita e anfibólio.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Biotita Granito"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/105-Biotita-Granito.jpg "
+          />
+          <div class="card-body">
+            <h5 class="card-title">Biotita Granito</h5>
+            <p class="card-text">
+              O biotita granito é uma variedade de granito que se destaca pela
+              presença de biotita, mineral escuro que ocorre junto a feldspato
+              alcalino, quartzo e plagioclásio. Formado pelo resfriamento lento
+              do magma em profundidade, apresenta textura fanerítica com
+              minerais visíveis a olho nu. A biotita confere tons mais escuros à
+              rocha. Trata-se de uma rocha félsica, resistente e amplamente
+              usada na construção civil pela durabilidade e aspecto visual.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Gabro"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/125-Gabro-m%C3%A9dio.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gabro</h5>
+            <p class="card-text">
+              O gabro é uma rocha ígnea plutônica, escura e de granulação média
+              a grossa, formada pelo resfriamento lento do magma em grandes
+              profundidades da crosta terrestre. Possui composição semelhante à
+              do basalto e resulta da fusão parcial do manto superior. Seus
+              principais minerais são plagioclásio e piroxênio, podendo conter
+              também olivina.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Mármore"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/346-Marmore-Calcitico.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mármore</h5>
+            <p class="card-text">
+              Mármore é uma rocha metamórfica que se forma quando o calcário é
+              submetido a condições mais altas de pressão e temperatura. É
+              composto principalmente de calcita e/ou dolomita. Geralmente,
+              apresenta outros minerais, como quartzo, talco, tremolita,
+              diopsídio ou olivina, que podem ser utilizados para estimar a
+              temperatura e pressão a que a rocha esteve submetida. Usualmente,
+              apresenta estrutura maciça, mas pode apresentar bandamento de cor
+              em padrões variados.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Gnaisse Granítico"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/328-Gnaisse-Granit%C3%ADco-2.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gnaisse Granilítico</h5>
+            <p class="card-text">
+              Gnaisse é uma rocha metamórfica de médio a alto grau, submetida a
+              temperaturas e pressões elevadas. Frequentemente exibe bandamento
+              composto por leitos claros com quartzo e feldspatos intercalados
+              com leitos escuros com biotita e anfibólio. Pode derivar do
+              metamorfismo de granito ou de rochas sedimentares
+              quartzo-argilosas.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Quartzito"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/339-Quartzito.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Quartzito</h5>
+            <p class="card-text">
+              Quartzito é uma rocha metamórfica composta quase inteiramente de
+              quartzo, formada quando arenitos ricos em quartzo são submetidos a
+              aumento de pressão e temperatura. Pode ser maciço ou foliado,
+              dependendo da presença de muscovita fina derivada do metamorfismo.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Calcário"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/227-Calc%C3%A1rio-Fino-2.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Calcário</h5>
+            <p class="card-text">
+              O calcário é uma rocha sedimentar carbonática formada em antigos
+              ambientes marinhos, resultando principalmente da atividade de
+              algas e cianobactérias. Pode conter fósseis e apresenta variedades
+              como calcário oolítico e tipos claros ou escuros.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Arenito"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/215-Arenito.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Arenito</h5>
+            <p class="card-text">
+              Arenito é uma rocha sedimentar clástica formada pela compactação e
+              cimentação de areias. Seus grãos são majoritariamente de quartzo.
+              A cor varia conforme o tipo de cimento, sendo comum o ferruginoso,
+              que gera tons vermelhos ou alaranjados. Arenitos são muito porosos
+              e podem armazenar água e petróleo.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            alt="Coquina"
+            src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/230-Coquina-Silicificada.jpg"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Coquina</h5>
+            <p class="card-text">
+              Coquina é uma rocha sedimentar bioclástica formada pelo acúmulo de
+              conchas cimentadas, podendo ser considerada um tipo de calcário.
+              No Brasil, ocorre em sambaquis, sítios arqueológicos formados por
+              populações antigas que acumulavam conchas em determinados locais.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="divinicial hutton-container painel" id="hutton">
+        <h2>James Hutton – O Pai da Geologia</h2>
+        <p class="hutton-frase">
+          James Hutton –
+          <strong> “O presente é a chave do passado” </strong>
         </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/gipsita-2.jpg" alt="Gipsita" />
-      <div class="card-body">
-        <h5 class="card-title">Gipsita - CaSO4·2H2O</h5>
-        <p class="card-text">
-          A gipsita ou gipso é um sulfato de cálcio hidratado amplamente
-          distribuído, gerado a partir da precipitação de sais em processos de
-          evaporação de massas de água isoladas.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/calcita-6.jpg" alt="Calcita" />
-      <div class="card-body">
-        <h5 class="card-title">Calcita - CaCO3</h5>
-        <p class="card-text">
-          A calcita é um dos principais minerais formadores de rochas (o
-          principal carbonato) e por muitas vezes o predominante em rochas
-          sedimentares, nos calcários; em rochas metamórficas, nos mármores; e
-          nas rochas ígneas.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/fluorita-6.jpg" alt="Fluorita" />
-      <div class="card-body">
-        <h5 class="card-title">Fluorita - CaF2</h5>
-        <p class="card-text">
-          A fluorita é um mineral halogeneto amplamente distribuído, composto
-          principalmente por cálcio e flúor, com a ocasional contaminação de
-          minerais de terras raras. Seus usos tem variado ao longo do tempo,
-          nos últimos anos, por exemplo, tornando-se cada vez mais importante
-          na indústria química.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/apatita-4.jpg" alt="Apatita" />
-      <div class="card-body">
-        <h5 class="card-title">Apatita - Ca5(PO4)3(OH-,Cl-,F-)</h5>
-        <p class="card-text">
-          Apatita é um nome que abrange tanto um mineral como um grupo mineral
-          inserido nos fosfatos, predominantemente compostos por fosfato de
-          cálcio (mas podendo apresentar teores significativos de flúor, cloro
-          e hidróxido).
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/feldspato-1.jpg" alt="Feldspato/ortoclásio" />
-      <div class="card-body">
-        <h5 class="card-title">Feldspato/ortoclásio - KAlSi3O8</h5>
-        <p class="card-text">
-          São chamados feldspatos alcalinos principalmente o ortoclásio e o
-          microclínio, como conjunto. A série incluí feldspatos potássicos e
-          também feldspatos que podem conter também diferentes quantidades de
-          sódio na estrutura.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/quartzo-1.jpg" alt="Quartzo" />
-      <div class="card-body">
-        <h5 class="card-title">Quartzo - SiO2</h5>
-        <p class="card-text">
-          O quartzo é o principal mineral do grupo de SiO2 dos
-          tectossilicatos. Além de ser formado só por tetraedros de sílica
-          altamente polimerizados, sua estrutura química simples o relaciona à
-          grande variedade de polimorfos de sílica (cristobalita e tridimita,
-          membros do grupo e diferenciados só pelo arranjo tridimensional dos
-          tetraedros de sílica).
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/topazio-4.jpg" alt="Topázio" />
-      <div class="card-body">
-        <h5 class="card-title">Topázio - Al2SiO4(OH-,F-)2</h5>
-        <p class="card-text">
-          Mineral formado por processos magmáticos, pneumatolíticos e
-          hidrotermais (fluidos hidrotermais e pneumatolíticos de altas
-          temperaturas ricos em voláteis) e metamórficos (metamorfismo de alto
-          grau em sedimentos aluminosos, ricos em quartzo e contendo flúor).
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/corindon-1.jpg" alt="Coríndon" />
-      <div class="card-body">
-        <h5 class="card-title">Corindon - Al2O3</h5>
-        <p class="card-text">
-          O coríndon é um mineral de óxido de alumínio conhecido pela sua
-          dureza (9, mineral índice da escala Mohs) e pelo seu brilho intenso.
-          Devido a essas características, é muito utilizado como gema em suas
-          diferentes variedades. As principais são a safira (azul) e o rubi
-          (vermelho).
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://cdn.crusoe.com.br/uploads/2025/09/diamante.jpg" alt="Diamante" />
-      <div class="card-body">
-        <h5 class="card-title">Diamante - C</h5>
-        <p class="card-text">
-          Mineral formado em grande profundidade, onde a pressão em relação ao
-          grau geotérmico permite a sua geração, sendo que quanto maior o grau
-          geotérmico mais profundo o seu ambiente de formação. Dessa forma,
-          este mineral apenas pode aparecer na superfície trazido por magmas
-          de origem profunda e ascensão rápida (kimberlíticos e lamproíticos),
-          pois se a subida for lenta possibilita a transformação para grafita.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div id="terras" class="cards-container">
-
-    <h2>Rochas</h2>
-
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/109-Riolitos.jpg" alt="Riolito" />
-      <div class="card-body">
-        <h5 class="card-title">Riolito</h5>
-        <p class="card-text">
-          O riolito é uma rocha ígnea vulcânica rica em sílica, composicionalmente semelhante ao granito. É formado
-          principalmente por quartzo, plagioclásio e feldspato alcalino, apresentando textura afanítica, com cristais
-          muito finos, podendo conter fenocristais imersos em matriz vítrea. Devido ao alto teor de sílica, seu magma é
-          muito viscoso e pouco fluido, o que favorece erupções explosivas e a produção de cinzas vulcânicas. Quando a
-          lava riolítica resfria rapidamente na superfície, pode formar vidro vulcânico, como a obsidiana.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2017/04/obsidiana-2.jpg" alt="Obsidiana" />
-      <div class="card-body">
-        <h5 class="card-title">Obsidiana</h5>
-        <p class="card-text">
-          O vidro vulcânico é uma rocha ígnea formada pelo resfriamento extremamente rápido da lava, o que impede a
-          cristalização. Lavas ricas em sílica geram vidro com mais facilidade, e quando esse material apresenta
-          cristais visíveis é chamado de vitrófiro. A obsidiana é um vidro vulcânico escuro, de brilho marcante e
-          fratura conchoidal, muito usada desde a pré-história. Em erupções explosivas, o vidro pode conter vesículas:
-          quando muito leve e vesiculado forma o púmice, e quando mais denso forma a escória.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/126-Basalto.jpg" alt="Basalto" />
-      <div class="card-body">
-        <h5 class="card-title">Basalto</h5>
-        <p class="card-text">
-          O basalto é uma rocha ígnea vulcânica, escura e de textura fina, formada pelo rápido resfriamento do magma
-          basáltico, pobre em sílica e rico em minerais máficos. Sua composição é dominada por plagioclásio, piroxênio
-          e, por vezes, olivina. Pode apresentar textura afanítica ou porfirítica e conter vesículas ou amígdalas. Seu
-          equivalente intrusivo é o gabro. No Rio Grande do Sul, basaltos são conhecidos por abrigar geodos de ametista
-          e ágata. O andesito é uma rocha intermediária entre o basalto e o riolito.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/103-Granito-Porfir%C3%ADtico.jpg"
-        alt="Granito Porfirítico" />
-      <div class="card-body">
-        <h5 class="card-title">Granito Porfirítico</h5>
-        <p class="card-text">
-          O granito porfirítico é um granito que apresenta grandes cristais de feldspato alcalino, chamados
-          megacristais, destacados em uma matriz de grãos menores, o que caracteriza sua textura porfirítica. Essa
-          textura surge quando alguns minerais crescem mais rapidamente durante o resfriamento do magma. Sua cor varia
-          conforme o feldspato alcalino, podendo ser branca, cinza, rosa, vermelha ou verde. A composição é semelhante à
-          dos granitos comuns, predominando feldspato alcalino, quartzo e plagioclásio, além de minerais como biotita,
-          muscovita e anfibólio.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/105-Biotita-Granito.jpg "
-        alt="Biotita Granito" />
-      <div class="card-body">
-        <h5 class="card-title">Biotita Granito</h5>
-        <p class="card-text">
-          O biotita granito é uma variedade de granito que se destaca pela presença de biotita, mineral escuro que
-          ocorre junto a feldspato alcalino, quartzo e plagioclásio. Formado pelo resfriamento lento do magma em
-          profundidade, apresenta textura fanerítica com minerais visíveis a olho nu. A biotita confere tons mais
-          escuros à rocha. Trata-se de uma rocha félsica, resistente e amplamente usada na construção civil pela
-          durabilidade e aspecto visual.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/125-Gabro-m%C3%A9dio.jpg" alt="Gabro" />
-      <div class="card-body">
-        <h5 class="card-title">Gabro</h5>
-        <p class="card-text">
-          O gabro é uma rocha ígnea plutônica, escura e de granulação média a grossa, formada pelo resfriamento lento do
-          magma em grandes profundidades da crosta terrestre. Possui composição semelhante à do basalto e resulta da
-          fusão parcial do manto superior. Seus principais minerais são plagioclásio e piroxênio, podendo conter também
-          olivina.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/346-Marmore-Calcitico.jpg" alt="Mármore" />
-      <div class="card-body">
-        <h5 class="card-title">Mármore</h5>
-        <p class="card-text">
-          Mármore é uma rocha metamórfica que se forma quando o calcário é submetido a condições mais altas de pressão e
-          temperatura. É composto principalmente de calcita e/ou dolomita. Geralmente, apresenta outros minerais, como
-          quartzo, talco, tremolita, diopsídio ou olivina, que podem ser utilizados para estimar a temperatura e pressão
-          a que a rocha esteve submetida. Usualmente, apresenta estrutura maciça, mas pode apresentar bandamento de cor
-          em padrões variados.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/328-Gnaisse-Granit%C3%ADco-2.jpg"
-        alt="Gnaisse Granítico" />
-      <div class="card-body">
-        <h5 class="card-title">Gnaisse Granilítico</h5>
-        <p class="card-text">
-          Gnaisse é uma rocha metamórfica de médio a alto grau, submetida a temperaturas e pressões elevadas.
-          Frequentemente exibe bandamento composto por leitos claros com quartzo e feldspatos intercalados com leitos
-          escuros com biotita e anfibólio. Pode derivar do metamorfismo de granito ou de rochas sedimentares
-          quartzo-argilosas.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/339-Quartzito.jpg" alt="Quartzito" />
-      <div class="card-body">
-        <h5 class="card-title">Quartzito</h5>
-        <p class="card-text">
-          Quartzito é uma rocha metamórfica composta quase inteiramente de quartzo, formada quando arenitos ricos em
-          quartzo são submetidos a aumento de pressão e temperatura. Pode ser maciço ou foliado, dependendo da presença
-          de muscovita fina derivada do metamorfismo.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/227-Calc%C3%A1rio-Fino-2.jpg" alt="Calcário" />
-      <div class="card-body">
-        <h5 class="card-title">Calcário</h5>
-        <p class="card-text">
-          O calcário é uma rocha sedimentar carbonática formada em antigos ambientes marinhos, resultando principalmente
-          da atividade de algas e cianobactérias. Pode conter fósseis e apresenta variedades como calcário oolítico e
-          tipos claros ou escuros.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/215-Arenito.jpg" alt="Arenito" />
-      <div class="card-body">
-        <h5 class="card-title">Arenito</h5>
-        <p class="card-text">
-          Arenito é uma rocha sedimentar clástica formada pela compactação e cimentação de areias. Seus grãos são
-          majoritariamente de quartzo. A cor varia conforme o tipo de cimento, sendo comum o ferruginoso, que gera tons
-          vermelhos ou alaranjados. Arenitos são muito porosos e podem armazenar água e petróleo.
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="https://didatico.igc.usp.br/wp-content/uploads/2018/07/230-Coquina-Silicificada.jpg" alt="Coquina" />
-      <div class="card-body">
-        <h5 class="card-title">Coquina</h5>
-        <p class="card-text">
-          Coquina é uma rocha sedimentar bioclástica formada pelo acúmulo de conchas cimentadas, podendo ser considerada
-          um tipo de calcário. No Brasil, ocorre em sambaquis, sítios arqueológicos formados por populações antigas que
-          acumulavam conchas em determinados locais.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div id="hutton" class="divinicial hutton-container">
-    <h2>James Hutton – O Pai da Geologia</h2>
-
-    <p class="hutton-frase">
-      James Hutton – <strong>“O presente é a chave do passado”</strong>
-    </p>
-
-    <div class="hutton-img-wrapper">
-      <img src="https://gelogia.com/wp-content/uploads/2025/07/James-Hutton-1080x675.jpg" alt="James Hutton" />
-    </div>
-  </div>
-
-
-
-
-  <footer class="rodape">
-    <h1>© 2025 - Pedro Yokada</h1>
-  </footer>
+        <div class="hutton-img-wrapper">
+          <img
+            alt="James Hutton"
+            src="https://gelogia.com/wp-content/uploads/2025/07/James-Hutton-1080x675.jpg"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p class="rodape-texto">© 2025 - Pedro Yokada</p>
+    </footer>
+  </body>
+</html>
